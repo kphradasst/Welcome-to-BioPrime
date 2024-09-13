@@ -38,19 +38,23 @@
         </form>
         <div id="responseContainer" class="dynamic-textbox"></div>
         <script>
-  const form = document.getElementById('myForm');
-form.addEventListener('submit', async (event) => {
-    event.preventDefault(); // Prevent default form submission
+document.getElementById('myForm').addEventListener('submit', async (event) => {
+  event.preventDefault(); // Prevent default form submission
 
-    const formData = new FormData(form);
-    const response = await fetch('YOUR_WEB_APP_URL', { // Replace with your Google Apps Script web app URL
-        method: 'POST',
-        body: formData
+  const formData = new FormData(event.target);
+  try {
+    const response = await fetch('https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec', { // Replace with your actual Web App URL
+      method: 'POST',
+      body: formData
     });
 
     const result = await response.text();
-    alert(result); // Success message
+    alert(result); // Display success message
+  } catch (error) {
+    alert('Error: ' + error.message);
+  }
 });
+
 
         </script>
     </section>
