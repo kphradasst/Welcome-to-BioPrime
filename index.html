@@ -21,7 +21,7 @@
     <!-- Register Section -->
     <section class="register-section">
         <h1>Register Here</h1>
-        <form action="https://script.google.com/macros/s/AKfycbzlvvNkLYbPpsz-sFrjoxxnfJhgqoAz6wYo3HJOCEb5L3DBCy54h4nFQXW0e_IjBIc9/exec" method="POST">
+        <form id="myForm" action="https://script.google.com/macros/s/AKfycbzlvvNkLYbPpsz-sFrjoxxnfJhgqoAz6wYo3HJOCEb5L3DBCy54h4nFQXW0e_IjBIc9/exec" method="POST">
             <label for="name">Lastname:</label>
             <input type="text" id="Lastname" name="Lastname" required>
             <br>
@@ -29,7 +29,7 @@
             <input type="text" id="Firstname" name="Firstname" required>
             <br>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="Email" id="Email" name="Email" required>
             <br>
             <label for="password">Company:</label>
             <input type="text" id="Company" name="Company" required>
@@ -43,7 +43,7 @@ document.getElementById('myForm').addEventListener('submit', async (event) => {
 
   const formData = new FormData(event.target);
   try {
-    const response = await fetch(https://script.google.com/macros/s/AKfycbzlvvNkLYbPpsz-sFrjoxxnfJhgqoAz6wYo3HJOCEb5L3DBCy54h4nFQXW0e_IjBIc9/exec, { // Replace with your actual Web App URL
+    const response = await fetch('https://script.google.com/macros/s/AKfycbzlvvNkLYbPpsz-sFrjoxxnfJhgqoAz6wYo3HJOCEb5L3DBCy54h4nFQXW0e_IjBIc9/exec', { // Replace with your actual Web App URL
       method: 'POST',
       body: formData
     });
