@@ -36,6 +36,7 @@
             <br>
             <button type="submit">Register & Claim Your Rewards</button>
         </form>
+        <div id="responseContainer" class="dynamic-textbox"></div>
         <script>
   const form = document.getElementById('myForm');
   form.addEventListener('submit', async (event) => {
@@ -48,9 +49,16 @@
     });
 
     const result = await response.text();
-    alert(result); // Success message
-  });
-</script>
+                const responseContainer = document.getElementById('responseContainer');
+                
+                // Create a new textbox and display it
+                responseContainer.innerHTML = `
+                    <label for="responseText">Response:</label>
+                    <input type="text" id="responseText" value="${result}" readonly>
+                `;
+                responseContainer.style.display = 'block'; // Show the textbox
+            });
+        </script>
     </section>
 
     <!-- Pembuat code: https://codepen.io/mdusmanansari/pen/BamepLe -->
