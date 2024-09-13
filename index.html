@@ -36,6 +36,21 @@
             <br>
             <button type="submit">Register & Claim Your Rewards</button>
         </form>
+        <script>
+  const form = document.getElementById('myForm');
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault(); // Prevent default form submission
+
+    const formData = new FormData(form);
+    const response = await fetch(https://script.google.com/macros/s/AKfycbzlvvNkLYbPpsz-sFrjoxxnfJhgqoAz6wYo3HJOCEb5L3DBCy54h4nFQXW0e_IjBIc9/exec, { // Replace with your Google Apps Script web app URL
+      method: 'POST',
+      body: formData
+    });
+
+    const result = await response.text();
+    alert(result); // Success message
+  });
+</script>
     </section>
 
     <!-- Pembuat code: https://codepen.io/mdusmanansari/pen/BamepLe -->
