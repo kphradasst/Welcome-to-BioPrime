@@ -7,36 +7,6 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>Welcome to BioPrime</title>
-<style>
-        /* Include the CSS from Step 1 here */
-        @keyframes pop-up {
-            0% {
-                opacity: 0;
-                transform: scale(0.5);
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        .hidden {
-            display: none; /* Initially hidden */
-        }
-
-        .register-section,
-        .silver-award-section {
-            opacity: 0; /* Start fully transparent */
-            transform: scale(0.5); /* Start smaller */
-            transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
-        }
-
-        .visible {
-            opacity: 1; /* Fully opaque */
-            transform: scale(1); /* Original size */
-            animation: pop-up 0.5s forwards; /* Apply pop-up animation */
-        }
-    </style>v
 </head>
 
 <body>
@@ -48,53 +18,41 @@
         </div>
     </div>
 
-<style>
-    #qualifications, #silver-qualifications {
-        width: 100%; /* Adjust width as needed (e.g., 300px or 80%) */
-        height: 200px; /* Adjust height as needed */
-        resize: none; /* Prevent resizing by the user, if desired */
-    }
-</style>
-
-
     <!-- Register Section -->
     <section class="register-section">
-        <h1>Gold Eminence</h1>
-        
-        <label for="qualifications">Gold Eminence Award Qualifications:</label>
-        <textarea id="qualifications" name="qualifications" required readonly>
+    <h1>Eminence Awards</h1>
+
+    <h2>Gold Eminence</h2>
+    <label for="gold-qualifications">Gold Eminence Award Qualifications:</label>
+    <textarea id="gold-qualifications" name="gold-qualifications" required readonly>
 1. Leadership & Initiative: Nominees must have demonstrated strong leadership, initiative, and the ability to inspire and guide their peers.
 2. Consistent Performance: Candidates should have a record of consistently exceeding job expectations and achieving goals.
 3. Impactful Contribution: The nominee's work should have significantly impacted the company, leading to positive results or noticeable improvements.
 4. Problem-Solving Skills: Ability to address challenges with innovative and effective solutions.
 5. Collaboration & Teamwork: Demonstrated excellence in working collaboratively across teams and promoting a positive work culture.
 6. Years of Service: Consideration for employees who have been part of the organization for a year with sustained excellence.
-        </textarea>
-        <br>
+    </textarea>
+    <br>
 
-<label for="gold-nominee">Select Gold Eminence Award Nominee:</label>
-<select id="gold-nominee" name="gold-nominee" required>
-    <option value="" disabled selected>Select a nominee</option>
-    <option value="Kate Melindo - Finance Manager">Kate Melindo - Finance Manager</option>
-    <option value="Ann Alimagno - Executive Assistant">Ann Alimagno - Executive Assistant</option>
-    <option value="Milagros Borbon - Account Receivables">Milagros Borbon - Account Receivables</option>
-<option value="Rejean De Jose - Field Admin">Rejean De Jose - Field Admin</option>
-<option value="Michelle Borromeo - Marketing Assistant">Michelle Borromeo - Marketing Assistant</option>
-<option value="King Peruelo - HRAD Assistant">King Peruelo - HRAD Assistant</option>
-<option value="Dave Paigao - IT/Logistic">Dave Paigao - IT/Logistic</option>
-<option value="Andrea Enriquez - Sales Admin Assistant">Andrea Enriquez - Sales Admin Assistant</option>
-<option value="Lailanie Rosales - Accounts Payable">Lailanie Rosales - Accounts Payable</option>
-<option value="Michelle Terrenal - Research Officer">Michelle Terrenal - Research Officer</option>
+    <label for="gold-nominee">Select Gold Eminence Award Nominee:</label>
+    <select id="gold-nominee" name="gold-nominee" required>
+        <option value="" disabled selected>Select a nominee</option>
+        <option value="Kate Melindo - Finance Manager">Kate Melindo - Finance Manager</option>
+        <option value="Ann Alimagno - Executive Assistant">Ann Alimagno - Executive Assistant</option>
+        <option value="Milagros Borbon - Account Receivables">Milagros Borbon - Account Receivables</option>
+        <option value="Rejean De Jose - Field Admin">Rejean De Jose - Field Admin</option>
+        <option value="Michelle Borromeo - Marketing Assistant">Michelle Borromeo - Marketing Assistant</option>
+        <option value="King Peruelo - HRAD Assistant">King Peruelo - HRAD Assistant</option>
+        <option value="Dave Paigao - IT/Logistic">Dave Paigao - IT/Logistic</option>
+        <option value="Andrea Enriquez - Sales Admin Assistant">Andrea Enriquez - Sales Admin Assistant</option>
+        <option value="Lailanie Rosales - Accounts Payable">Lailanie Rosales - Accounts Payable</option>
+        <option value="Michelle Terrenal - Research Officer">Michelle Terrenal - Research Officer</option>
+    </select>
 
-</select>
 
-<br> <!-- Line break for spacing -->
-
-<!-- Silver Eminence Award Section -->
-<section class="silver-award-section">
-    <h2>Silver Eminence</h2>
-<label for="qualifications">Silver Eminence Award Qualifications:</label>
-    <textarea id="silver-qualifications" name="silver-qualifications" required readonly class="qualifications-textarea">
+    <h3>Silver Eminence</h3>
+    <label for="silver-qualifications">Silver Eminence Award Qualifications:</label>
+    <textarea id="silver-qualifications" name="silver-qualifications" required readonly>
 1. Reliable Performance: Nominees should consistently meet or exceed job performance standards.
 2. Leadership & Initiative: Nominees must have demonstrated strong leadership, initiative, and acts as a leader, motivating and supporting peers, even without holding an official leadership position.
 3. Supportive Team Role: Recognized for being a supportive and dependable member of the team.
@@ -104,47 +62,27 @@
 7. Dependability: Consistently dependable and reliable in completing tasks on time and meeting standards.
 8. Peer Feedback: Favorable feedback or recognition from peers and supervisors for their contributions.
     </textarea>
-<br>
+    <br>
 
-<label for="silver-nominee">Select Silver Eminence Award Nominee:</label>
-<select id="silver-nominee" name="silver-nominee" required>
-    <option value="" disabled selected>Select a nominee</option>
-    <option value="Kate Melindo - Finance Manager">Kate Melindo - Finance Manager</option>
-    <option value="Ann Alimagno - Executive Assistant">Ann Alimagno - Executive Assistant</option>
-    <option value="Milagros Borbon - Account Receivables">Milagros Borbon - Account Receivables</option>
-<option value="Rejean De Jose - Field Admin">Rejean De Jose - Field Admin</option>
-<option value="Michelle Borromeo - Marketing Assistant">Michelle Borromeo - Marketing Assistant</option>
-<option value="King Peruelo - HRAD Assistant">King Peruelo - HRAD Assistant</option>
-<option value="Dave Paigao - IT/Logistic">Dave Paigao - IT/Logistic</option>
-<option value="Andrea Enriquez - Sales Admin Assistant">Andrea Enriquez - Sales Admin Assistant</option>
-<option value="Lailanie Rosales - Accounts Payable">Lailanie Rosales - Accounts Payable</option>
-<option value="Michelle Terrenal - Research Officer">Michelle Terrenal - Research Officer</option>
-    <!-- Add more nominees as needed -->
-</select>
+    <label for="silver-nominee">Select Silver Eminence Award Nominee:</label>
+    <select id="silver-nominee" name="silver-nominee" required>
+        <option value="" disabled selected>Select a nominee</option>
+        <option value="Kate Melindo - Finance Manager">Kate Melindo - Finance Manager</option>
+        <option value="Ann Alimagno - Executive Assistant">Ann Alimagno - Executive Assistant</option>
+        <option value="Milagros Borbon - Account Receivables">Milagros Borbon - Account Receivables</option>
+        <option value="Rejean De Jose - Field Admin">Rejean De Jose - Field Admin</option>
+        <option value="Michelle Borromeo - Marketing Assistant">Michelle Borromeo - Marketing Assistant</option>
+        <option value="King Peruelo - HRAD Assistant">King Peruelo - HRAD Assistant</option>
+        <option value="Dave Paigao - IT/Logistic">Dave Paigao - IT/Logistic</option>
+        <option value="Andrea Enriquez - Sales Admin Assistant">Andrea Enriquez - Sales Admin Assistant</option>
+        <option value="Lailanie Rosales - Accounts Payable">Lailanie Rosales - Accounts Payable</option>
+        <option value="Michelle Terrenal - Research Officer">Michelle Terrenal - Research Officer</option>
+    </select>
 </section>
-<script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Set a timeout to show the register section after 3 seconds (3000 milliseconds)
-            setTimeout(function() {
-                const registerSection = document.querySelector(".register-section");
-                const silverSection = document.querySelector(".silver-award-section");
-
-                // Remove hidden class and add visible class
-                registerSection.classList.remove("hidden");
-                registerSection.classList.add("visible");
-
-                silverSection.classList.remove("hidden");
-                silverSection.classList.add("visible");
-            }, 3000);
-        });
-    </script>
-
-
-
-
-        
-    </form>
-    <div id="responseContainer" class="dynamic-textbox"></div>
+            <br>
+            <button type="submit">Register & Claim Your Rewards</button>
+        </form>
+        <div id="responseContainer" class="dynamic-textbox"></div>
         <script>
 document.getElementById('myForm').addEventListener('submit', async (event) => {
   event.preventDefault(); // Prevent default form submission
