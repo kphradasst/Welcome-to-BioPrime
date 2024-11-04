@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>Welcome to BioPrime</title>
-    <style>
+<style>
         /* Include the CSS from Step 1 here */
         @keyframes pop-up {
             0% {
@@ -113,22 +113,6 @@
             <button type="submit">Register & Claim Your Rewards</button>
         </form>
         <div id="responseContainer" class="dynamic-textbox"></div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Set a timeout to show the register section after 3 seconds (3000 milliseconds)
-            setTimeout(function() {
-                const registerSection = document.querySelector(".register-section");
-                const silverSection = document.querySelector(".silver-award-section");
-
-                // Remove hidden class and add visible class
-                registerSection.classList.remove("hidden");
-                registerSection.classList.add("visible");
-
-                silverSection.classList.remove("hidden");
-                silverSection.classList.add("visible");
-            }, 3000);
-        });
-    </script>
         <script>
 document.getElementById('myForm').addEventListener('submit', async (event) => {
   event.preventDefault(); // Prevent default form submission
@@ -149,6 +133,22 @@ document.getElementById('myForm').addEventListener('submit', async (event) => {
 
 
         </script>
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Set a timeout to show the register section after 3 seconds (3000 milliseconds)
+            setTimeout(function() {
+                const registerSection = document.querySelector(".register-section");
+                const silverSection = document.querySelector(".silver-award-section");
+
+                // Remove hidden class and add visible class
+                registerSection.classList.remove("hidden");
+                registerSection.classList.add("visible");
+
+                silverSection.classList.remove("hidden");
+                silverSection.classList.add("visible");
+            }, 3000);
+        });
+    </script>
     </section>
 
     <!-- Pembuat code: https://codepen.io/mdusmanansari/pen/BamepLe -->
