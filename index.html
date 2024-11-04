@@ -7,6 +7,36 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>Welcome to BioPrime</title>
+    <style>
+        /* Include the CSS from Step 1 here */
+        @keyframes pop-up {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .hidden {
+            display: none; /* Initially hidden */
+        }
+
+        .register-section,
+        .silver-award-section {
+            opacity: 0; /* Start fully transparent */
+            transform: scale(0.5); /* Start smaller */
+            transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+        }
+
+        .visible {
+            opacity: 1; /* Fully opaque */
+            transform: scale(1); /* Original size */
+            animation: pop-up 0.5s forwards; /* Apply pop-up animation */
+        }
+    </style>
 </head>
 
 <body>
@@ -83,6 +113,22 @@
             <button type="submit">Register & Claim Your Rewards</button>
         </form>
         <div id="responseContainer" class="dynamic-textbox"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Set a timeout to show the register section after 3 seconds (3000 milliseconds)
+            setTimeout(function() {
+                const registerSection = document.querySelector(".register-section");
+                const silverSection = document.querySelector(".silver-award-section");
+
+                // Remove hidden class and add visible class
+                registerSection.classList.remove("hidden");
+                registerSection.classList.add("visible");
+
+                silverSection.classList.remove("hidden");
+                silverSection.classList.add("visible");
+            }, 3000);
+        });
+    </script>
         <script>
 document.getElementById('myForm').addEventListener('submit', async (event) => {
   event.preventDefault(); // Prevent default form submission
