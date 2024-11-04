@@ -27,7 +27,7 @@ body {
 
 .register-section {
     position: absolute; /* or fixed if you want it to stay while scrolling */
-    top: 50%;
+    top: 10%;
     left: 10%;
     transform: translateY(-50%);
     z-index: 10;
