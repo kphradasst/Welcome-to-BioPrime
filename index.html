@@ -60,6 +60,7 @@
     <!-- Register Section -->
     <section class="register-section">
         <h1>Gold Eminence</h1>
+        
         <label for="qualifications">Gold Eminence Award Qualifications:</label>
         <textarea id="qualifications" name="qualifications" required readonly>
 1. Leadership & Initiative: Nominees must have demonstrated strong leadership, initiative, and the ability to inspire and guide their peers.
@@ -136,7 +137,34 @@
                 silverSection.classList.add("visible");
             }, 3000);
         });
-    
+    </script>
+
+
+
+
+        
+    </form>
+    <div id="responseContainer" class="dynamic-textbox"></div>
+        <script>
+document.getElementById('myForm').addEventListener('submit', async (event) => {
+  event.preventDefault(); // Prevent default form submission
+
+  const formData = new FormData(event.target);
+  try {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbzlvvNkLYbPpsz-sFrjoxxnfJhgqoAz6wYo3HJOCEb5L3DBCy54h4nFQXW0e_IjBIc9/exec', { // Replace with your actual Web App URL
+      method: 'POST',
+      body: formData
+    });
+
+    const result = await response.text();
+    alert(result); // Display success message
+  } catch (error) {
+    alert('Error: ' + error.message);
+  }
+});
+
+
+        </script>
     </section>
 
     <!-- Pembuat code: https://codepen.io/mdusmanansari/pen/BamepLe -->
