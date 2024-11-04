@@ -19,99 +19,40 @@ body {
   overflow: hidden;
   perspective: 1000px;
 }
-.qualifications-textarea {
-    width: 100%; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
-    resize: none; /* Prevent resizing by the user, if desired */
-    margin-top: 10px; /* Space above the textarea */
-}
-.silver-award-section {
-    position: absolute; /* or fixed if you want it to stay while scrolling */
-    top: 0%; /* Adjust top position as needed */
-    left: 150%;
-    transform: translateY(-50%);
-    z-index: 10;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    height: 100%;
-    width: 450px; /* Set a width for the section */
-    color: #66655f; /* Set text color to light green */
+.register-section textarea {
+    width: 100%;
+    height: 150px; /* Adjust as needed */
+    resize: none; /* Prevent users from resizing */
 }
 
-.silver-award-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.silver-award-section label {
-    margin: 10px 0 5px;
-}
-
-.silver-award-section textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f7f6f2; /* Black background with 70% opacity */
-    color: #6b6965s; /* White text for contrast */
-    opacity: 1; /* Ensure the textarea itself is fully opaque */
-    width: 100%; /* Make it responsive */
-    height: 300px; /* Adjust height as needed */
-    resize: none; /* Prevent resizing by the user, if desired */
-}
-
-.silver-award-section select {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
-    color: white; /* White text for contrast */
-    opacity: 1; /* Ensure the dropdown itself is fully opaque */
-    width: 100%; /* Make it responsive */
-}
-
-.silver-award-section textarea::placeholder,
-.silver-award-section select:focus {
-    color: lightgreen; /* Light green color for placeholders */
-}
-
-.silver-award-section button {
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.silver-award-section button:hover {
-    background-color: #45a049;
-}
 .register-section {
     position: absolute; /* or fixed if you want it to stay while scrolling */
-    top: 10%;
+    top: 50%;
     left: 10%;
     transform: translateY(-50%);
     z-index: 10;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
-    height: 55%;
-    width: 450px; /* Set a width for the form */
-    color: #e3a702;
-  
+    width: 400px; /* Set a width for the form */
+    color: lightgreen; /* Set text color to light green */
 }
-.register-section textarea::placeholder,
-.register-section select:focus {
-    color: lightgreen; /* Light green color for placeholders */
-}
-
 
 .register-section h1 {
     font-size: 24px;
     margin-bottom: 20px;
+}
+.register-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+margin-top: 20px;
+color: #ff8000;
+}
+.register-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+margin-top: 20px;
+color: #808080;
 }
 
 .register-section form {
@@ -129,7 +70,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
-    color: #e0b404; /* White text for contrast */
+    color: white; /* White text for contrast */
     opacity: 1; /* Ensure the input fields themselves are fully opaque */
 }
 
@@ -148,22 +89,6 @@ body {
 .register-section button:hover {
         background-color: #45a049;
     }
-
-.register-section select {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
-    color: white; /* White text for contrast */
-    opacity: 1; /* Ensure the dropdown itself is fully opaque */
-    width: 100%; /* Make it responsive */
-}
-
-.select:focus {
-    outline: none; /* Remove the default outline */
-    border-color: #4CAF50; /* Change border color on focus */
-}
 @keyframes slideUp {
     0% {
         opacity: 0;
